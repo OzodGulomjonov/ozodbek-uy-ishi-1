@@ -1,0 +1,123 @@
+.site-build-section {
+   background-color: $color-super-green;
+   padding-top: 200px;
+   padding-bottom: 140px;
+   background-image: url(../../img/bcg-img-3.png);
+   background-repeat: no-repeat;
+   background-position: right bottom;
+}
+
+.site-build-section__content {
+   display: flex;
+   align-items: flex-start;
+   justify-content: space-between;
+}
+
+.site-build-section__heading {
+   font-weight: 900;
+   font-size: 48px;
+   line-height: 48px;
+   color: #FFFFFF;
+   max-width: 445px   ;
+}
+
+.site-build-section__list {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   flex-direction: column;
+}
+
+.site-build-section__list-item {
+
+   display: flex;
+   align-items: center;
+
+   &:not(:last-child) {
+      margin-bottom: 35px;
+   }
+}
+
+.site-build-section__list-item-img {
+   margin-right: 23px;
+}
+
+.site-build-section__list-item-heading {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 28px;   
+   color: $color-pink;
+}
+
+.site-build-section__list-item-text {
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 25px;
+   color: #FFFFFF;
+   opacity: 0.8;
+   max-width: 445px   ;
+}
+
+@media only screen and (max-width:1025px) {
+   
+   .site-build-section {
+      background-position: top right;
+      padding-top: 0;
+      padding-top: 100px;
+   }
+
+   .site-build-section__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+   }
+
+   .site-build-section__heading {
+      max-width: 445px;
+      font-size: 32px;
+      line-height: 32px;
+   }
+}
+
+@media only screen and (max-width:590px) {
+
+   .site-build-section__list-item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+   }
+
+   .site-build-section__list-item-img {
+      margin-right: 0;
+   }
+
+   .site-build-section__heading {
+      max-width: 260px;
+   }
+
+   .site-build-section__list {
+      margin-top: 56px;
+      justify-content: center;
+      align-items: center;
+   }
+
+   .site-build-section__list-item-text {
+      max-width: 245px;
+      font-size: 13px;
+      line-height: 22px;
+   }
+
+   .site-build-section__list-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+   }
+
+   .site-build-section__content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+   }
+}

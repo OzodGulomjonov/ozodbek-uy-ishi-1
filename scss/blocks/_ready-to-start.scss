@@ -1,0 +1,70 @@
+.ready-to-start-content {
+   background-color: $color-pink;
+   background-image: url(../../img/bcg-img-10.png);
+   background-position: left bottom;
+   background-repeat: no-repeat;
+   padding-top: 76px;
+   padding-bottom: 76px;
+}
+
+.ready-to-start-content__container {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.ready-to-start-content__heading {
+   font-size: 48px;
+   line-height: 48px;
+   font-weight: 900;
+   color: $color-super-green;
+   padding-left: 80px;
+   margin: 0;
+}
+
+.ready-to-start-content__link {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 28px;   
+   border: 2px solid $color-super-green;
+   box-sizing: border-box;
+   border-radius: 24px;
+   display: block;
+   color: $color-super-green;
+   padding: 9px 32px;
+   transition: 0.5s;
+   margin-right: 80px;
+
+   &:hover {
+      color: $color-green;
+      transition: 0.5s;
+      border: 2px solid $color-green;
+   }
+}   
+
+@media only screen and (max-width:970px) {
+   
+   .ready-to-start-content__container {
+      display: flex;
+      flex-direction: column;
+   }
+
+   .ready-to-start-content__heading {
+      padding-left: 0;
+      text-align: center;
+      margin-bottom: 25px;
+   }
+
+   .ready-to-start-content__link {
+      margin-right: 0;
+      display: block;
+      margin: 0 auto;
+   }
+}
+
+@media only screen and (max-width:400px) {
+   
+   .ready-to-start-content__heading {
+      max-width: 265px;
+   }
+}

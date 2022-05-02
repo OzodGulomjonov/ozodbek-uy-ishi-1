@@ -1,0 +1,117 @@
+.site-stories-section {
+   background-color: $color-dark-green;
+   padding-top: 140px;
+   padding-bottom: 245px;
+   background-image: url(../../img/bcg-img-4.png), url(../../img/bcg-img-5.png);
+   background-repeat: no-repeat , no-repeat;
+   z-index: 2;
+   background-position: top left , bottom right;
+}
+
+.site-stories-section__heading {
+   font-weight: 900;
+   font-size: 48px;
+   line-height: 48px;
+   text-align: center;
+   color: $color-white;
+   max-width: 932px;
+   text-align: center;
+   margin: 0 auto;
+}
+
+.site-stories-section__span {
+   color: $color-aqua;
+}
+
+.site-stories-section__list {
+   list-style-type: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   align-items: center;
+   margin-top: 92px;
+   justify-content: space-between;
+}
+
+.site-stories-section__list-item {
+   position: relative;
+   padding-top: 30px;
+   background-image: url(../../img/qoshtirnoq.png);
+   background-repeat: no-repeat;
+   background-position: center top calc(100% - 230px);
+}
+
+.site-stories-section__list-item-text {
+   font-weight: 600;
+   font-size: 15px;
+   line-height: 25px;   
+   text-align: center;
+   color: $color-white;
+   max-width: 350px;
+}
+
+.site-stories-section__list-item-str {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 28px;   
+   text-align: center;
+   color: $color-aqua;
+}
+
+.site-stories-section__list-item-name {
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 18px;   
+   text-align: center;
+   color: #FFFFFF;
+}
+
+.site-stories-section__list-item-img {
+   display: block;
+   margin: 0 auto ;
+}
+
+@media only screen and (max-width:1160px) {
+   
+
+   .site-stories-section__list {
+      display: flex;
+      flex-direction: column;
+
+      .site-stories-section__list-item {
+         margin-top: 30px;
+      }
+   }
+
+   .site-stories-section__heading {
+      max-width: 573px;
+   }
+
+   .site-stories-section__list-item-text {
+      max-width: 573px;
+   }
+}
+
+@media only screen and (max-width:800px) {
+   
+   .site-stories-section__heading {
+      font-size: 28px;
+      line-height: 28px;
+      max-width: 250px;
+   }
+
+   .site-stories-section__list-item-text {
+      max-width: 250px;
+      font-size: 15px;
+      line-height: 25px;
+   }
+
+   .site-stories-section__list-item {
+      margin-top: 0;
+      padding: 0;
+   }
+
+   .site-stories-section__list {
+      margin-top: 0;
+   }
+}

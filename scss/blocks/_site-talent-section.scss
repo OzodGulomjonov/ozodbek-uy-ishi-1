@@ -1,0 +1,102 @@
+.site-talent-section {
+   background-color: $color-dark-green;
+   padding-top: 10px;
+   background-image: url(../../img/bcg-img-1.png);
+   background-repeat: no-repeat;
+   background-position: left top calc(100% - 220px);
+}
+
+.site-talent-section__content {
+   margin-top: 100px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   background-image: url(../../img/Group7.png);
+   background-repeat: no-repeat;
+   background-position: right bottom calc(100% - 340px);
+   padding-bottom: 220px;
+}
+
+.site-talent-section__heading {
+   margin: 0;
+   padding: 0;
+   font-weight: 900;
+   font-size: 100px;
+   line-height: 100px;
+   color: #FFFFFF;
+   max-width: 635px;
+}
+
+.site-talent-section__span {
+   color: $color-pink;
+}
+
+.site-talent-section__text-wrapper {
+   padding-top: 50px;
+   &::before {
+      content: "";
+      padding-left: 4px;
+      background-color: $color-green;
+   }
+}
+
+.site-talent-section__text {
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 28px;
+   color: #FFFFFF;
+   max-width: 445px;
+}
+
+@media only screen and (max-width:1110px) {
+   
+   .site-talent-section__content {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background-image: none;
+      background-image: url(../../img/Group7.png);
+      background-repeat: no-repeat;
+      background-position: bottom;
+   }
+
+   .site-talent-section__text-wrapper {
+
+      text-align: center;
+      &::before {
+         display: none;
+      }
+   }
+
+   .site-talent-section__text {
+      max-width: 457px;
+   }
+
+   .site-talent-section__heading-wrapper {
+      text-align: center;
+   }
+
+   .site-talent-section {
+      background-image: none;
+   }
+}
+
+@media only screen and (max-width:620px) {
+
+   .site-talent-section__heading {
+      font-size: 35px;
+      line-height: 35px;
+      max-width: 250px;
+   }
+
+   .site-talent-section__text-wrapper {
+      padding-top: 0;
+      padding-top: 20px;
+   }
+
+   .site-talent-section__text {
+      font-size: 13px;
+      line-height: 25px;
+      max-width: 250px;
+   }
+}
