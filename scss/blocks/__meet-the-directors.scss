@@ -1,0 +1,161 @@
+.meet-the-directors {
+   background-color: $color-master-green;
+   padding-top: 20px;
+   background-image: url(../../img/bcg-image-2.png) , url(../../img/bcg-image-3.png);
+   background-repeat:  no-repeat;
+   background-position: left top , right bottom;
+   padding-bottom: 168px;
+}
+
+.meet-the-directors__container {
+   
+}
+
+.meet-the-directors__heading {
+   font-weight: 600;
+   font-size: 48px;
+   line-height: 48px;   
+   text-align: center;
+   color: $color-white;
+}
+
+.meet-the-directors__list {
+   display: flex;
+   align-items: center;
+   margin: 0;
+   padding: 0;
+   list-style-type: none;
+}
+
+.meet-the-directors__hover {
+   display: none;
+   padding-top: 34px;   
+}
+
+
+.meet-the-directors__item {
+   display: flex;
+   align-items: center; 
+   flex-direction: column;
+   background-color: $color-super-green;
+   max-width: 350px;
+   width: 100%;
+
+   &:hover {
+      .meet-the-directors__hover {
+         display: block;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         // padding-bottom: 3px;
+      }
+
+      .meet-the-directors__item-wrapper {
+         display: none;
+      }
+
+      .meet-the-directors__hover-span {
+         transition: 0.5s;
+         color: $color-aqua;
+      }
+
+      .meet-the-directors__hover-span-img {
+         display: block;
+         transition: 0.8s;
+         transform: rotate(45deg);
+      }
+   }
+}
+
+.meet-the-directors__hover-span {
+   margin-bottom: -28px;
+}
+
+.meet-the-directors__img {
+   padding-top: 32px;
+}
+
+.meet-the-directors__item-name {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 28px;   
+   text-align: center;
+   color: $color-aqua;
+   margin: 0;
+   margin-top: 16px;
+   padding-left: 24px;
+   padding-right: 24px;
+}
+
+.meet-the-directors__item-text {
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 25px;   
+   text-align: center;
+   color: $color-white;
+   margin: 0;
+}
+
+.meet-the-directors__span {
+   margin-bottom: -28px;
+   margin-top: 32px;
+}
+
+.meet-the-directors__hover {
+
+}
+
+.meet-the-directors__hover-name {
+   font-weight: 700;
+   font-size: 18px;
+   line-height: 28px;   
+   text-align: center;
+   color: $color-aqua;
+   padding-left: 24px;
+   padding-right: 24px;
+   margin-bottom: 8px;
+}
+
+.meet-the-directors__hover-text {
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 25px;   
+   text-align: center;
+   color: $color-white;
+   max-width: 254px;
+   margin-bottom: 24px;
+   margin: 0;
+}
+
+.meet-the-directors__item-wrapper {
+   display: flex;
+   align-items: center; 
+   flex-direction: column;
+   background-color: $color-super-green;
+   max-width: 350px;
+   width: 100%;
+}
+
+.meet-the-directors__icons-wrapper {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 35px;
+   margin-top: 6px;
+}
+
+.meet-the-directors__icon-wrapper {
+
+   &:not(:first-child) {
+      margin-left: 8px;
+   }
+
+   &:not(:last-child) {
+      margin-right: 8px;
+   }
+}
+
+.meet-the-directors__icon {
+
+}
+
